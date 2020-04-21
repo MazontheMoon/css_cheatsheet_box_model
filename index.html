@@ -6,6 +6,56 @@
     <title>CSS Box</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
-    <body>
-    </body>
+    <!--------------------------------------------
+My CSS Cheat Sheet for learning CSS - Box Model
+------------------------------------------------>
+<body>
+  <main class="container">
+    <header id="top">
+      <h1>Thinking inside the box (model)!</h1>
+    </header>
+    <section>
+      <p>A picture (or diagram) is worth a thousand words as they say...</p>
+      <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
+      <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model">
+      <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
+    </section>
+    <section>
+      <header>Overflow</header>
+      <div class="box">
+        <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow</p>
+        <p>The overflow property has some common values:</p>
+        <ul>
+          <li><span class="list-head">auto</span>The overflowing content is hidden and scroll bars are shown</li>
+          <li><span class="list-head">hidden</span>The overflowing content is hidden</li>
+          <li><span class="list-head">visible</span>The overflowing content is shown outside the box <span class="highlighter">(default)</span></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <header>Background clip</header>
+      <div class="box">
+        <p>Box backgrounds are made up of colours and images stacked on each other (background-color, background-image)</p>
+        <p>By default extends to the outer edge of the border (can be adjusted using background-clip property on the box)</p>
+      </div>
+    </section>
+    <section>
+      <header>Outline</header>
+      <div class="box">
+        <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
+        </p>
+        <p>Outline is used for accessibility reasons to highlight an active part of the page such as links – don’t make your outlines look like link highlights.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
+    <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2020
+      <a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"></span></a>
+      <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"></span></a>
+      <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"></span></a>
+      <a href="https://mazcodesonthemoon.wordpress.com/" target="_blank"> <span class="fab fa-wordpress"></span></a>
+    </p>
+  </footer>
+</body>
 </html>
