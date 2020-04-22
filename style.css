@@ -3,19 +3,27 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
-
-    
+  --header-background: #58c6c8; /*Turquoise*/
+  --box-background: #73a0d0; /*Blue*/
+  --border: #87afcd; /*skyblue*/
+  --sub-border: #bfe4d4; /*minty green*/
+  --page-background: #f5f5f5; /*offwhite*/
+  --text: #000; /*black*/
 }
 
-/*=====================
-Basic Styles 
-======================*/
+/*============
+Back to Basics
+===============*/
 html,
 body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-size: 14px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--page-background);
 }
 
 /*set global styles*/
@@ -25,3 +33,53 @@ body * {
   -moz-box-sizing: border-box;
   margin: 0;
 }
+
+/*=============
+Text and fonts
+===============*/
+
+/*fallback fonts - never shall Times New Roman be seen again!!!*/
+h1,
+h2,
+p,
+a,
+li {
+  font-family: Verdana, sans-serif;
+}
+
+/*special "Look at me" text highlights*/
+
+/*======================
+Layout - boxes in boxes
+=======================*/
+
+main {
+  border: solid 3px var(--border);
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+section {
+  border: solid 3px var(--sub-border);
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+section header {
+  text-align: center;
+  padding: 5px;
+}
+/*===========
+Link styling
+=============*/
+
+/*=============
+Responsiveness
+===============*/
+
+/*==========================
+Ye old timer printing view
+===========================*/

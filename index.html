@@ -15,13 +15,18 @@ My CSS Cheat Sheet for learning CSS - Box Model
       <h1>Thinking inside the box (model)!</h1>
     </header>
     <section>
+      <header>
+        <h2>The boxes in the box model</h2>
+      </header>
       <p>A picture (or diagram) is worth a thousand words as they say...</p>
       <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
       <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model">
       <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
     </section>
     <section>
-      <header>Overflow</header>
+      <header>
+        <h2>Overflow</h2>
+      </header>
       <div class="box">
         <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow</p>
         <p>The overflow property has some common values:</p>
@@ -33,14 +38,18 @@ My CSS Cheat Sheet for learning CSS - Box Model
       </div>
     </section>
     <section>
-      <header>Background clip</header>
+      <header>
+        <h2>Background clip</h2>
+      </header>
       <div class="box">
         <p>Box backgrounds are made up of colours and images stacked on each other (background-color, background-image)</p>
         <p>By default extends to the outer edge of the border (can be adjusted using background-clip property on the box)</p>
       </div>
     </section>
     <section>
-      <header>Outline</header>
+      <header>
+        <h2>Outline</h2>
+      </header>
       <div class="box">
         <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
         </p>
