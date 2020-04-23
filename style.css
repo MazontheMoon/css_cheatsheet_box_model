@@ -49,15 +49,27 @@ li {
   font-family: Verdana, sans-serif;
 }
 
+/*Size matters...text size that is!*/
 h1 {
   font-size: 2.5rem;
 }
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p,
+li {
+  font-size: 1.25rem;
+}
+
 #top {
   width: 100%;
   background-color: var(--header-background);
   color: var(--headline-text);
   text-shadow: 2px 2px 3px var(--page-background),
-    3px 3px 4px var(--page-background), -1px -1px 3px var(--page-background);
+               3px 3px 4px var(--page-background), 
+               -1px -1px 3px var(--page-background);
   text-align: center;
   line-height: 4rem;
 }
