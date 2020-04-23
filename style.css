@@ -7,8 +7,10 @@ Declare variables for page
   --box-background: #73a0d0; /*Blue*/
   --border: #87afcd; /*skyblue*/
   --sub-border: #bfe4d4; /*minty green*/
-  --page-background: #f5f5f5; /*offwhite*/
+  --page-background: #263238; /*slate*/
+  --box-background: #f5f5f5; /*offwhite*/
   --text: #000; /*black*/
+  --headline-text: #f5f5f5; /*offwhite*/
 }
 
 /*============
@@ -47,6 +49,30 @@ li {
   font-family: Verdana, sans-serif;
 }
 
+/*Size matters...text size that is!*/
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p,
+li {
+  font-size: 1.25rem;
+}
+
+#top {
+  width: 100%;
+  background-color: var(--header-background);
+  color: var(--headline-text);
+  text-shadow: 2px 2px 3px var(--page-background),
+               3px 3px 4px var(--page-background), 
+               -1px -1px 3px var(--page-background);
+  text-align: center;
+  line-height: 4rem;
+}
 /*special "Look at me" text highlights*/
 
 /*======================
@@ -66,6 +92,7 @@ section {
   margin: 5px;
   padding: 5px;
   width: 100%;
+  background-color: var(--box-background);
 }
 
 section header {
