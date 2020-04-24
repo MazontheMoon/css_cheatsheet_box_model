@@ -67,8 +67,10 @@ li {
   width: 100%;
   background-color: var(--header-background);
   color: var(--headline-text);
-  text-shadow: 2px 2px 3px var(--page-background),
-    3px 3px 4px var(--page-background), -1px -1px 3px var(--page-background);
+  text-shadow: 
+    2px 2px 3px var(--page-background),
+    3px 3px 4px var(--page-background),
+   -1px -1px 3px var(--page-background);
   text-align: center;
   line-height: 4rem;
 }
@@ -83,8 +85,6 @@ Layout - boxes in boxes
 =======================*/
 
 main {
-  border: solid 3px var(--border);
-  padding: 5px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
