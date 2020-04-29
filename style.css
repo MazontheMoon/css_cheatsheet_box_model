@@ -21,7 +21,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -45,7 +45,8 @@ h1,
 h2,
 p,
 a,
-li {
+li,
+figcaption {
   font-family: Verdana, sans-serif;
 }
 
@@ -55,36 +56,48 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 p,
 li {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-#top {
-  width: 100%;
-  background-color: var(--header-background);
-  color: var(--headline-text);
-  text-shadow: 
-    2px 2px 3px var(--page-background),
-    3px 3px 4px var(--page-background),
-   -1px -1px 3px var(--page-background);
-  text-align: center;
-  line-height: 4rem;
-}
 /*special "Look at me" text highlights*/
 .highlighter {
   font-style: italic;
   text-decoration: underline;
   text-decoration-style: double;
+  text-align: center;
+  line-height: 200%;
 }
+
 /*======================
 Layout - boxes in boxes
 =======================*/
 
+/*Page Header..AKA..Top of Page*/
+#top {
+  width: 100%;
+  background-color: var(--header-background);
+  border-bottom: solid 3px var(--border);
+  color: var(--headline-text);
+  text-shadow: 2px 2px 3px var(--page-background),
+    3px 3px 4px var(--page-background), -1px -1px 3px var(--page-background);
+  text-align: center;
+  line-height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/*main content of page*/
 main {
+  border: solid 3px var(--border);
+  margin-top: 4rem;
+  padding: 5px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -102,10 +115,49 @@ section header {
   text-align: center;
   padding: 5px;
 }
+
+/*figures and images*/
+figure {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 1rem;
+  position: relative;
+}
+
+/*List Styles*/
+
+ul li {
+  list-style: none;
+}
+.list-head {
+  display: block;
+  font-style: italic;
+  font-weight: bolder;
+}
 /*===========
 Link styling
 =============*/
 
+/*=================
+The little touches
+==================*/
+
+/*In case of image not found*/
+#box-img:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px dashed var(--dGreen);
+  background-color: var(--silver);
+  z-index: 1;
+  font-family: verdana;
+  font-size: 0.8em;
+  content: "" attr(alt) " was not found";
+}
 /*=============
 Responsiveness
 ===============*/
