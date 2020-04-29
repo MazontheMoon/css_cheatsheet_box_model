@@ -14,17 +14,19 @@
 My CSS Cheat Sheet for learning CSS - Box Model
 ------------------------------------------------>
 <body>
+  <header id="top">
+    <h1>Thinking inside the box (model)!</h1>
+  </header>
   <main class="container">
-    <header id="top">
-      <h1>Thinking inside the box (model)!</h1>
-    </header>
     <section>
       <header>
         <h2>The boxes in the box model</h2>
       </header>
-      <p>A picture (or diagram) is worth a thousand words as they say...</p>
-      <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
-      <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model">
+      <figure>
+        <figcaption>A picture (or diagram) is worth a thousand words as they say...</figcaption>
+        <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
+        <img id="box-img" class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model" alt="Diagram of CSS box model" title="CSS Box model diagram">
+      </figure>
       <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
     </section>
     <section>
