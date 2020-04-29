@@ -1,7 +1,7 @@
 # css_cheatsheet_box_model
-My CSS Cheatsheet - The Box Modle
+My CSS Cheatsheet - The Box Model
 
-My cheat sheet to teach myself to understand the box
+My cheat sheet to teach myself to understand the box inside a box inside a box and so on...
 
 ### Prerequisites
 
@@ -33,6 +33,7 @@ Version #1.1 - initial content
 * W3Schools
 * Font Awesome
 * Google fonts
+* WikiCommons
 * Coolors
 
 ## License
