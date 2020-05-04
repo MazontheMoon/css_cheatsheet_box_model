@@ -135,6 +135,25 @@ ul li {
   font-style: italic;
   font-weight: bolder;
 }
+
+/*=================================
+Background Example boxes - Display
+===================================*/
+
+/*Background color*/
+
+/*Background color gradient (used as image)*/
+
+/*Background image*/
+
+/*Background clip - default border-box*/
+
+/*Background clip -  padding-box*/
+
+/*Background clip -  content-box*/
+
+/*Outline example box*/
+
 /*===========
 Link styling
 =============*/

@@ -49,7 +49,17 @@ My CSS Cheat Sheet for learning CSS - Box Model
       </header>
       <div class="box">
         <p>Box backgrounds are made up of colours and images stacked on each other (background-color, background-image)</p>
+        <div class="example-box">
+          <div id="background-example-colour"></div>
+          <div id="background-example-colour-gradient"></div>
+          <div id="background-example-image"></div>
+        </div>
         <p>By default extends to the outer edge of the border (can be adjusted using background-clip property on the box)</p>
+        <div class="example-box">
+          <div id="background-example-clip-border"></div>
+          <div id="background-example-clip-padding"></div>
+          <div id="background-example-clip-content"></div>
+        </div>
       </div>
     </section>
     <section>
@@ -60,6 +70,9 @@ My CSS Cheat Sheet for learning CSS - Box Model
         <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
         </p>
         <p>Outline is used for accessibility reasons to highlight an active part of the page such as links – don’t make your outlines look like link highlights.</p>
+        <div class="example-box">
+          <div id="background-example-outline"></div>
+        </div>
       </div>
     </section>
   </main>
