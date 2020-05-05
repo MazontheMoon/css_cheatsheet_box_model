@@ -93,7 +93,13 @@ Layout - boxes in boxes
   z-index: 10;
 }
 
-/*main content of page*/
+/*=======
+Nav menu
+=========*/
+
+/*======================
+Main layout and sections
+=======================*/
 main {
   border: solid 3px var(--border);
   margin-top: 4rem;
@@ -125,9 +131,11 @@ figure {
   position: relative;
 }
 
-/*List Styles*/
+/*===========
+List styling
+=============*/
 
-ul li {
+#description-list li {
   list-style: none;
 }
 .list-head {

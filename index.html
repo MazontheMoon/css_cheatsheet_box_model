@@ -14,36 +14,105 @@
 My CSS Cheat Sheet for learning CSS - Box Model
 ------------------------------------------------>
 <body>
+  <!------------------------------
+  Page heading - title text only
+  -------------------------------->
   <header id="top">
     <h1>Thinking inside the box (model)!</h1>
   </header>
+  <!---------------------------
+  Navigation menu - 9 sections
+  ---------------------------->
+
+  <!---------------------------
+  Main content box for sections
+  ----------------------------->
   <main class="container">
-    <section>
+    <!--section 1 - the box model intro with diagram figure-->
+    <section id="intro-box-section">
       <header>
         <h2>The boxes in the box model</h2>
       </header>
       <figure>
         <figcaption>A picture (or diagram) is worth a thousand words as they say...</figcaption>
         <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
-        <img id="box-img" class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model" alt="Diagram of CSS box model" title="CSS Box model diagram">
+        <img id="box-img" class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model" alt="Diagram of CSS box model courtesy of Ccalvert on WikiCommons" title="CSS Box model diagram">
       </figure>
       <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
     </section>
-    <section>
+    <!--section 2 - the content box-->
+    <section id="content-box-section">
       <header>
-        <h2>Overflow</h2>
+        <h2>The Content Box</h2>
+      </header>
+      <div class="box">
+        <p>The inner core of the box model is the content (otherwise it is an empty box).</p>
+        <p>Properties that can be set on the content box are:</p>
+        <ul>
+          <li>height</li>
+          <li>width></li>
+          <li>max-height</li>
+          <li>min-height</li>
+          <li>max-width</li>
+          <li>min-width</li>
+        </ul>
+      </div>
+    </section>
+    <!--section 3 - the padding box-->
+    <section id="padding-box-section">
+      <header>
+        <h2>The Padding Box</h2>
+      </header>
+    </section>
+    <!--section 4 - the border box box-->
+    <section id="border-box-section">
+      <header>
+        <h2>The Border Box</h2>
+      </header>
+    </section>
+    <!--section 5 - the margin box-->
+    <section id="margin-box-section">
+      <header>
+        <h2>The Margin Box</h2>
+      </header>
+    </section>
+    <!--section 6 - the box-sizing box-->
+    <section id="boxsizing-box-section">
+      <header>
+        <h2>Sizing up your Box</h2>
+      </header>
+    </section>
+    <!--section 7 - the overflowing box-->
+    <section id="overflow-box-section">
+      <header>
+        <h2>Overflowing your Box</h2>
       </header>
       <div class="box">
         <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow</p>
         <p>The overflow property has some common values:</p>
-        <ul>
+        <ul id="description-list">
           <li><span class="list-head">auto</span>The overflowing content is hidden and scroll bars are shown</li>
           <li><span class="list-head">hidden</span>The overflowing content is hidden</li>
           <li><span class="list-head">visible</span>The overflowing content is shown outside the box <span class="highlighter">(default)</span></li>
         </ul>
       </div>
     </section>
-    <section>
+    <!--section 8 - the outline box-->
+    <section id="outline-box-section">
+      <header>
+        <h2>Outlining your box</h2>
+      </header>
+      <div class="box">
+        <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
+        </p>
+        <p>Outline is used for accessibility reasons to highlight an active part of the page such as links – don’t make your outlines look like link highlights.</p>
+        <div class="example-box">
+          <div id="background-example-outline"></div>
+        </div>
+      </div>
+    </section>
+    <!--section 9 - the background box-->
+    <section id="background-box-section">
       <header>
         <h2>Background clip</h2>
       </header>
@@ -62,20 +131,10 @@ My CSS Cheat Sheet for learning CSS - Box Model
         </div>
       </div>
     </section>
-    <section>
-      <header>
-        <h2>Outline</h2>
-      </header>
-      <div class="box">
-        <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
-        </p>
-        <p>Outline is used for accessibility reasons to highlight an active part of the page such as links – don’t make your outlines look like link highlights.</p>
-        <div class="example-box">
-          <div id="background-example-outline"></div>
-        </div>
-      </div>
-    </section>
   </main>
+  <!-----
+  footer 
+  ------>
   <footer>
     <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
     <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2020
