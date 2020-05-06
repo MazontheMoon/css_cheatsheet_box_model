@@ -50,7 +50,7 @@ My CSS Cheat Sheet for learning CSS - Box Model
         <p>Properties that can be set on the content box are:</p>
         <ul>
           <li>height</li>
-          <li>width></li>
+          <li>width</li>
           <li>max-height</li>
           <li>min-height</li>
           <li>max-width</li>
@@ -63,12 +63,30 @@ My CSS Cheat Sheet for learning CSS - Box Model
       <header>
         <h2>The Padding Box</h2>
       </header>
+      <div class="box">
+        <p>Padding refers to the inner margin of a CSS box – between the outer edge of content box and inner edge of border</p>
+        <p>Padding can be set in a number of ways:</p>
+        <ul class="description-list">
+          <li><span class="list-head">padding: 1rem;</span>Sets 1rem of padding on each side</li>
+          <li><span class="list-head">padding: 1rem 2rem;</span>Sets 1rem of padding on the top and bottom and 2rem of padding on each side</li>
+          <li><span class="list-head">padding: 1rem 3rem 2rem;</span>Sets 1rem of padding on the top, 3rem of padding on the rigth and left, and 2rem of padding on the bottom</li>
+          <li><span class="list-head">padding: 1rem 3rem 2rem;</span>Sets 1rem of padding on the top, 3rem of padding on the rigth and left, and 2rem of padding on the bottom</li>
+          <li><span class="list-head">padding: 1rem 1.5rem 2rem 1rem;</span>Sets 1rem of padding on the top, 1.5rem of padding on the rigth, 2rem of padding on the bottom and 1rem on the left (clockwise starting at 12 o'clock)</li>
+        </ul>
+      </div>
     </section>
     <!--section 4 - the border box box-->
     <section id="border-box-section">
       <header>
         <h2>The Border Box</h2>
       </header>
+      <div class="box">
+        <p>The border sits between the outer edge of the padding and inner edge of the margin.</p>
+        <p>The border shorthand property sets the values of border-width, border-style, and border-color.</p>
+        <!--border style-->
+        <!--border radius-->
+        <!--border images-->
+      </div>
     </section>
     <!--section 5 - the margin box-->
     <section id="margin-box-section">
@@ -90,7 +108,7 @@ My CSS Cheat Sheet for learning CSS - Box Model
       <div class="box">
         <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow</p>
         <p>The overflow property has some common values:</p>
-        <ul id="description-list">
+        <ul class="description-list">
           <li><span class="list-head">auto</span>The overflowing content is hidden and scroll bars are shown</li>
           <li><span class="list-head">hidden</span>The overflowing content is hidden</li>
           <li><span class="list-head">visible</span>The overflowing content is shown outside the box <span class="highlighter">(default)</span></li>
@@ -105,7 +123,8 @@ My CSS Cheat Sheet for learning CSS - Box Model
       <div class="box">
         <p>Looks like a border but is not part of the box model and is drawn on top of the box without changing the size of the box (drawn outside the border box inside the margin area)
         </p>
-        <p>Outline is used for accessibility reasons to highlight an active part of the page such as links – don’t make your outlines look like link highlights.</p>
+        <p>Outline is used for accessibility reasons to highlight an active part of the page such as links</p>
+        <p><span class="highlighter">Don’t make your outlines look like link highlights.</span></p>
         <div class="example-box">
           <div id="background-example-outline"></div>
         </div>
