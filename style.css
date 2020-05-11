@@ -47,6 +47,7 @@ h3,
 p,
 a,
 li,
+code,
 figcaption {
   font-family: Verdana, sans-serif;
 }
@@ -79,6 +80,27 @@ li {
   line-height: 200%;
 }
 
+/*==================
+Default Link styling
+===================*/
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
 /*======================
 Layout - boxes in boxes
 =======================*/
@@ -103,6 +125,47 @@ Nav menu
 =========*/
 nav {
   margin-top: 4rem;
+  width: 100%;
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px;
+}
+
+.nav-button {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 3px;
+  border: solid 1px var(--page-background);
+}
+
+.nav-button a {
+  color: var(--headline-text);
+  text-decoration: none;
+}
+
+.nav-button a:link {
+}
+
+.nav-button a:visited {
+}
+
+.nav-button a:focus {
+  text-shadow: 1px 1px 2px var(--header-background);
+}
+
+.nav-button:hover {
+  border: solid 1px var(--headline-text);
+}
+
+.nav-button a:active {
+  text-shadow: 1px 1px 2px var(--header-background);
 }
 /*======================
 Main layout and sections
@@ -150,27 +213,60 @@ List styling
   font-weight: bolder;
 }
 
-/*=================================
-Background Example boxes - Display
-===================================*/
+/*========================
+Example boxes - Display
+==========================*/
 
-/*Background color*/
+/*=================
+Border Style Boxes
+===================*/
 
-/*Background color gradient (used as image)*/
+/*No Style - Control*/
+/*Hidden*/
+/*Dotted*/
+/*Dashed*/
+/*Solid*/
+/*Double*/
+/*Groove*/
+/*Ridge*/
+/*Inset*/
+/*Outset*/
 
-/*Background image*/
+/*============
+Border Radius
+==============*/
 
-/*Background clip - default border-box*/
+/*No radius - control*/
+/*Round*/
+/*Rounder*/
+/*Roundest*/
 
-/*Background clip -  padding-box*/
+/*============
+Border Madness
+==============*/
 
-/*Background clip -  content-box*/
+/*============
+Border Image
+==============*/
 
-/*Outline example box*/
+/*Image*/
+/*Colour Gradient*/
 
-/*===========
-Link styling
-=============*/
+/*======
+Outline
+=======*/
+
+/*==============
+Background Clip
+================*/
+
+/*Example boxes of color, colour gradient, and image to look like they are stacked on each other*/
+
+/*No clip - control*/
+/*Border Clip*/
+/*Padding Clip*/
+/*Content Clip*/
+/*Text Clip*/
 
 /*=================
 The little touches
