@@ -11,7 +11,7 @@ Web Browser
 
 * HTML
 * CSS
-* Sweat and tears
+* Sweat and tears and laughter
 
 ## Software
 * Brackets
@@ -21,6 +21,7 @@ Web Browser
 ## Versioning
 
 Version #1.1 - initial content
+Version #1.2 - Styling the style
 
 ## Authors
 
@@ -42,4 +43,4 @@ This project is licensed under Unlicense - see the [LICENSE.md](LICENSE.md) file
 
 ## Acknowledgments
 
-* FreeCodeCamp
+* Hard work pays off
