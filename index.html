@@ -10,8 +10,9 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" >
   </head>
-    <!--------------------------------------------
-My CSS Cheat Sheet for learning CSS - Box Model
+  <!--------------------------------------------
+  My CSS Cheat Sheet for learning CSS - Box Model
+  ----------------------------------------------->
 <body>
   <!------------------------------
   Page heading - title text only
@@ -49,7 +50,6 @@ My CSS Cheat Sheet for learning CSS - Box Model
         <!--cite https://commons.wikimedia.org/wiki/User:Ccalvert-->
         <img id="box-img" class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Box-model.svg/765px-Box-model.svg.png" alt="Diagram of the box model" alt="Diagram of CSS box model courtesy of Ccalvert on WikiCommons" title="CSS Box model diagram">
       </figure>
-      <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
     </section>
     <!--section 2 - the content box-->
     <section id="content-box-section">
@@ -67,6 +67,7 @@ My CSS Cheat Sheet for learning CSS - Box Model
           <li>max-width</li>
           <li>min-width</li>
         </ul>
+        <p class="highlighter">Note: box heights and borders do not observe % values for length</p>
       </div>
     </section>
     <!--section 3 - the padding box-->
@@ -111,11 +112,19 @@ My CSS Cheat Sheet for learning CSS - Box Model
         <!--border radius-->
         <h3>Border Radius</h3>
         <p>The corners are right angles but can also be rounded using border-radius (box-shadow will follow suit).</p>
-        <ul class="border-box-list">
+        <ul class="border-radius-list">
           <li id="border-radius-none">No Radius</li>
           <li id="border-radius-round">Round Radius</li>
           <li id="border-radius-rounder">Rounder Radius</li>
           <li id="border-radius-roundest">Roundest Radius</li>
+        </ul>
+        <p>Differing radius can be set for each corner too...</p>
+        <ul class="border-radius-list">
+          <li id="border-radius-skew1">Top Right and Bottom Left vs Top Left and Bottom Right</li>
+          <li id="border-radius-skew2">Top vs Bottom</li>
+          <li id="border-radius-skew3">Right vs left</li>
+          <li id="border-radius-skew4">Just the corner</li>
+          <li id="border-radius-skew5">Wonky</li>
         </ul>
         <!--border properties list-->
         <h3>Bordering Madness...</h3>
