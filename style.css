@@ -63,12 +63,18 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  margin: 1.5rem;
 }
 
 p,
 li {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+code {
+  font-style: italic;
+  font-weight: bold;
 }
 
 /*special "Look at me" text highlights*/
@@ -110,7 +116,7 @@ nav {
   padding: 5px;
 }
 
-.nav-button {
+#nav-bar .nav-button {
   list-style: none;
   text-align: center;
   flex: 1;
@@ -120,28 +126,28 @@ nav {
   border: solid 1px var(--page-background);
 }
 
-.nav-button a {
+#nav-bar .nav-button a {
   color: var(--headline-text);
   text-decoration: none;
 }
 
-.nav-button a:link {
+#nav-bar .nav-button a:link {
   text-shadow: 1px 1px 2px var(--text);
 }
 
-.nav-button a:visited {
+#nav-bar .nav-button a:visited {
   border-bottom: solid 1px var(--header-background);
 }
 
-.nav-button a:focus {
+#nav-bar .nav-button a:focus {
   text-shadow: 1px 1px 2px var(--header-background);
 }
 
-.nav-button:hover {
+#nav-bar .nav-button:hover {
   border: solid 1px var(--headline-text);
 }
 
-.nav-button a:active {
+#nav-bar .nav-button a:active {
   text-shadow: 1px 1px 2px var(--header-background);
 }
 /*======================
@@ -155,7 +161,7 @@ main {
   align-items: center;
 }
 
-section {
+main section {
   border: solid 3px var(--sub-border);
   margin: 5px;
   padding-bottom: 5px;
@@ -163,7 +169,7 @@ section {
   background-color: var(--box-background);
 }
 
-section header {
+main section header {
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -172,15 +178,8 @@ section header {
   background-color: var(--sub-border);
 }
 
-section .box {
+main section .box {
   padding: 0 0.5rem;
-}
-/*figures and images*/
-figure {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin-top: 0.75rem;
 }
 
 /*================
@@ -190,6 +189,7 @@ Basic List styling
 .description-list li {
   list-style: none;
 }
+
 .list-head {
   display: block;
   font-style: italic;
@@ -197,40 +197,189 @@ Basic List styling
 }
 
 /*===========================
+Intro Box Section (#1 of 9)
+============================*/
+/*figures and images*/
+figure {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+/*display property needed for the image not found trick*/
+figure img {
+  display: relative;
+}
+/*===========================
 Content Box Section (#2 of 9)
 ============================*/
 #content-box-section .box p:first-of-type {
   text-align: center;
   line-height: 200%;
+  margin-bottom: 1rem;
 }
-/*========================
-Example boxes - Display
-==========================*/
 
-/*=================
-Border Style Boxes
-===================*/
+#content-box-section ul {
+  padding-left: 4rem;
+}
+
+#content-box-section ul li {
+  list-style-type: square;
+}
+
+/*===========================
+Padding Box Section (#3 of 9)
+============================*/
+#padding-box-section .box p:first-of-type {
+  text-align: center;
+  line-height: 200%;
+  margin-bottom: 1rem;
+}
+
+#padding-box-section ul li {
+  margin: 1rem;
+}
+
+/*===========================
+Border Box Section (#4 of 9)
+============================*/
+#border-box-section .box p:first-of-type {
+  text-align: center;
+  line-height: 200%;
+  margin-bottom: 1rem;
+}
+
+#border-box-section .box p {
+  margin-left: 1rem;
+}
+
+/*==========
+Border Types
+============*/
+#border-box-section .border-box-list {
+  list-style: none;
+  width: 100%;
+}
+
+#border-box-section .border-box-list li {
+  width: 30%;
+  margin: 1rem 0;
+  text-align: center;
+  border: 4px solid black;
+}
 
 /*No Style - Control*/
+#border-box-section .border-box-list #border-none {
+  border: none;
+}
+
 /*Hidden*/
+#border-box-section .border-box-list #border-hidden {
+  border: hidden;
+}
+
 /*Dotted*/
+#border-box-section .border-box-list #border-dotted {
+  border: dotted;
+}
+
 /*Dashed*/
+#border-box-section .border-box-list #border-dashed {
+  border: dashed;
+}
+
 /*Solid*/
+#border-box-section .border-box-list #border-solid {
+  border: solid;
+}
+
 /*Double*/
+#border-box-section .border-box-list #border-double {
+  border: double;
+}
+
 /*Groove*/
+#border-box-section .border-box-list #border-groove {
+  border: groove;
+}
+
 /*Ridge*/
+#border-box-section .border-box-list #border-ridge {
+  border: ridge;
+}
+
 /*Inset*/
+#border-box-section .border-box-list #border-inset {
+  border: inset;
+}
+
 /*Outset*/
+#border-box-section .border-box-list #border-outset {
+  border: outset;
+}
 
 /*============
 Border Radius
 ==============*/
 
-/*No radius - control*/
-/*Round*/
-/*Rounder*/
-/*Roundest*/
+/*List of all border radius showing that radius*/
+#border-box-section .border-radius-list {
+  list-style: none;
+  width: 100%;
+}
 
+#border-box-section .border-radius-list li {
+  width: 50%;
+  margin: 1rem 0;
+  text-align: center;
+  border: 3px solid black;
+}
+
+/*No radius - control*/
+#border-box-section .border-radius-list #border-radius-none {
+  border-radius: 0;
+}
+
+/*Round*/
+#border-box-section .border-radius-list #border-radius-round {
+  border-radius: 5px;
+}
+
+/*Rounder*/
+#border-box-section .border-radius-list #border-radius-rounder {
+  border-radius: 15px;
+}
+
+/*Roundest*/
+#border-box-section .border-radius-list #border-radius-roundest {
+  border-radius: 50%;
+}
+
+/*skew1 - Top Right and Bottom Left vs Top Left and Bottom Right*/
+#border-box-section .border-radius-list #border-radius-skew1 {
+  border-radius: 15px 5px;
+}
+
+/*skew2 - Top vs Bottom */
+
+#border-box-section .border-radius-list #border-radius-skew2 {
+  border-radius: 15px 15px 0 0;
+}
+
+/*skew3 - Right vs Left*/
+#border-box-section .border-radius-list #border-radius-skew3 {
+  border-radius: 0 0 15px 15px;
+}
+
+/*skew4 - Right vs Left*/
+#border-box-section .border-radius-list #border-radius-skew4 {
+  border-radius: 0 0 15px 0;
+}
+/*skew5 - wonky*/
+#border-box-section .border-radius-list #border-radius-skew5 {
+  border-radius: 10% 50% 30% 25%;
+}
 /*============
 Border Madness
 ==============*/
@@ -277,6 +426,8 @@ The little touches
   font-size: 0.8em;
   content: "" attr(alt) " was not found";
 }
+
+/*Credit where credit is due - cite the creator of the image on hover*/
 
 /*==================
 Footer Link styling
