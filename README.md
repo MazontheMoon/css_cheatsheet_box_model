@@ -20,7 +20,7 @@ Web Browser
 
 ## Versioning
 
-Version #1.1 - initial content
+Version #1.1 - Initial Content
 Version #1.2 - Styling the style
 
 ## Authors
@@ -41,6 +41,3 @@ Version #1.2 - Styling the style
 
 This project is licensed under Unlicense - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hard work pays off

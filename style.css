@@ -383,6 +383,31 @@ Border Radius
 /*============
 Border Madness
 ==============*/
+#border-box-section .border-radius-property {
+  list-style: square;
+  margin-left: 3rem;
+}
+
+#border-box-section .border-longhand-list li {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+#border-box-section .border-longhand-1 {
+  border-style: dotted;
+}
+
+#border-box-section .border-longhand-2 {
+  border-style: dotted solid;
+}
+
+#border-box-section .border-longhand-3 {
+  border-style: hidden double dashed;
+}
+
+#border-box-section .border-longhand-4 {
+  border-style: none solid dotted dashed;
+}
 
 /*============
 Border Image
