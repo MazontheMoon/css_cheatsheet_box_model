@@ -180,8 +180,13 @@ main section header {
 
 main section .box {
   padding: 0 0.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
+.box p {
+  padding-left: 2rem;
+}
 /*================
 Basic List styling
 =================*/
@@ -444,8 +449,8 @@ The little touches
   left: 0;
   width: 100%;
   padding: 5px;
-  border: 1px dashed var(--dGreen);
-  background-color: var(--silver);
+  border: 1px dashed black;
+  background-color: grey;
   z-index: 1;
   font-family: verdana;
   font-size: 0.8em;
