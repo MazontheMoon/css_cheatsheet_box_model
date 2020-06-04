@@ -4,7 +4,7 @@ Declare variables for page
 :root {
   /*color scheme*/
   --header-background: #58c6c8; /*Turquoise*/
-  --box-background: #73a0d0; /*Blue*/
+  --box-background-border: #73a0d0; /*Blue*/
   --border: #87afcd; /*skyblue*/
   --sub-border: #bfe4d4; /*minty green*/
   --page-background: #263238; /*slate*/
@@ -184,6 +184,16 @@ main section .box {
   margin: 0 auto;
 }
 
+.box h3 {
+  text-shadow: 1px 1px 1px var(--border), 2px 2px 2px var(--box-background);
+  background-image: linear-gradient(
+    to right,
+    var(--sub-border),
+    var(--box-background)
+  );
+  padding-left: 4px;
+  border-left: solid 2px black;
+}
 .box p {
   padding-left: 2rem;
 }
