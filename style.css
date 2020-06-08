@@ -434,8 +434,37 @@ Border Image
   margin: 0 auto;
   padding: 1rem;
 }
-/*Colour Gradient*/
 
+#border-image-sample-box {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 36px solid orange;
+  border-image: url("https://www.w3schools.com/css/border.png") 30;
+}
+/*Colour Gradient*/
+#border-image-gradient-sample-box {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 36px solid var(--border);
+  border-image: linear-gradient(var(--border), var(--header-background)) 30;
+}
+
+/*============
+Border Image
+==============*/
+/*normal looking border with shadow as a control example*/
+#border-example-shadow {
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem;
+  border: 36px solid var(--border);
+}
+
+/*transparant border with blurred shadow*/
+#border-example-shadowwithoutborders {
+}
 /*======
 Outline
 =======*/
