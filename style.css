@@ -451,23 +451,42 @@ Border Image
   border-image: linear-gradient(var(--border), var(--header-background)) 30;
 }
 
-/*============
-Border Image
-==============*/
+/*========
+Box Shadow
+==========*/
 /*normal looking border with shadow as a control example*/
 #border-example-shadow {
   text-align: center;
   margin: 1rem;
   padding: 2rem;
-  border: 36px solid var(--border);
+  border: 20px solid var(--border);
+  box-shadow: 10px 5px 5px var(--sub-border);
 }
 
-/*transparant border with blurred shadow*/
-#border-example-shadowwithoutborders {
+/*example for an inset shadow*/
+#border-example-shadowinset {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 20px solid var(--border);
+  box-shadow: inset 10px 5px 5px var(--sub-border);
 }
+
+/*no border with blurred shadow*/
+#border-example-shadowwithoutborders {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px var(--border);
+}
+
 /*======
 Outline
 =======*/
+#background-example-outline p {
+  margin: 5px;
+  outline: 2px solid black;
+}
 
 /*==============
 Background Clip
