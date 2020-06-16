@@ -492,13 +492,45 @@ Outline
 Background Clip
 ================*/
 
-/*Example boxes of color, colour gradient, and image to look like they are stacked on each other*/
+/*Example boxes for background clip*/
+.background-clip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.background-clip-list li {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.75rem dashed black;
+  background-image: linear-gradient(
+    var(--sub-border),
+    var(--header-background),
+    var(--border),
+    var(--sub-border)
+  );
+}
 
-/*No clip - control*/
 /*Border Clip*/
+.background-clip-list #background-clip-border {
+  background-clip: border-box;
+}
+
 /*Padding Clip*/
+.background-clip-list #background-clip-padding {
+  background-clip: padding-box;
+}
 /*Content Clip*/
+.background-clip-list #background-clip-content {
+  background-clip: content-box;
+}
+
 /*Text Clip*/
+.background-clip-list #background-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
 
 /*=================
 The little touches
