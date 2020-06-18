@@ -223,8 +223,9 @@ figure {
 }
 
 /*display property needed for the image not found trick*/
-figure img {
-  display: relative;
+#box-img {
+  position: relative;
+  min-height: 3rem;
 }
 /*===========================
 Content Box Section (#2 of 9)
@@ -430,6 +431,7 @@ Border Image
 
 /*Image*/
 #sample-image {
+  position: relative;
   display: block;
   margin: 0 auto;
   padding: 1rem;
@@ -537,47 +539,54 @@ The little touches
 ==================*/
 
 /*In case of image not found*/
-#box-img:after {
+#box-img:after,
+#sample-image:after {
   display: inherit;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5px;
-  border: 1px dashed var(--dGreen);
-  background-color: var(--silver);
+  padding: 0.5rem;
+  border: 1px dashed var(--border);
+  background-color: var(--box-background);
   z-index: 1;
   font-family: verdana;
-  font-size: 0.8em;
+  font-size: 1rem;
   content: "" attr(alt) " was not found";
 }
 
-/*Credit where credit is due - cite the creator of the image on hover*/
+/*Credit where credit is due -https://commons.wikimedia.org/wiki/User:Ccalvert - cite the creator of the image on hover*/
 
+#box-img:hover {
+}
 /*==================
 Footer Link styling
 ===================*/
-a {
+footer a {
 }
 
-a:link {
+footer a:link {
 }
 
-a:visited {
+footer a:visited {
 }
 
-a:focus {
+footer a:focus {
 }
 
-a:hover {
+footer a:hover {
 }
 
-a:active {
+footer a:active {
 }
+
 /*=============
 Responsiveness
 ===============*/
-
+@media screen and (max-width: 768px) {
+}
 /*==========================
 Ye old timer printing view
 ===========================*/
+@media print {
+}
