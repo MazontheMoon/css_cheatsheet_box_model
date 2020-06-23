@@ -112,7 +112,7 @@ nav {
 #nav-bar {
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding: 5px;
 }
 
@@ -211,9 +211,9 @@ Basic List styling
   font-weight: bolder;
 }
 
-/*===========================
-Intro Box Section (#1 of 9)
-============================*/
+/*================
+Intro Box Section 
+===================*/
 /*figures and images*/
 figure {
   display: flex;
@@ -222,7 +222,7 @@ figure {
   margin-top: 0.75rem;
 }
 
-/*display property needed for the image not found trick*/
+/*position property needed for the image not found trick*/
 #box-img {
   position: relative;
   min-height: 3rem;
@@ -559,32 +559,54 @@ The little touches
 
 #box-img:hover {
 }
-/*==================
-Footer Link styling
-===================*/
+
+/*=============
+Footer styling
+===============*/
+footer p {
+  color: var(--box-background-border);
+}
+
+footer abbr {
+  color: var(--border);
+}
+
 footer a {
+  color: var(--border);
 }
 
 footer a:link {
+  color: var(--border);
 }
 
 footer a:visited {
+  color: var(--header-background);
 }
 
 footer a:focus {
+  color: var(--sub-border);
 }
 
 footer a:hover {
+  color: var(--sub-border);
 }
 
 footer a:active {
+  color: var(--header-background);
 }
 
 /*=============
 Responsiveness
 ===============*/
 @media screen and (max-width: 768px) {
+  /*layout - wrapping items that won't fit in one row*/
+  #nav-bar {
+
 }
+  
+  figure {
+
+  }
 /*==========================
 Ye old timer printing view
 ===========================*/
