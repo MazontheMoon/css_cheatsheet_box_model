@@ -598,14 +598,37 @@ footer a:active {
 /*=============
 Responsiveness
 ===============*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   /*layout - wrapping items that won't fit in one row*/
-  #nav-bar {
+  
+h1 {
+  font-size: 1.75rem;
+}
 
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#top {
+    line-height: 1.5rem;
+  }
+  
+  #nav-bar li {
 }
   
-  figure {
-
+  figure img{
+    width: 75%;
   }
 /*==========================
 Ye old timer printing view
