@@ -119,7 +119,7 @@ nav {
 #nav-bar .nav-button {
   list-style: none;
   text-align: center;
-  flex: 1;
+  flex: 1 1 10%;
   font-size: 1rem;
   line-height: 2rem;
   margin: 3px;
@@ -599,7 +599,8 @@ footer a:active {
 Responsiveness
 ===============*/
 @media screen and (max-width: 766px) {
-  /*layout - wrapping items that won't fit in one row*/
+  
+/*size change for text, padding and margins*/
   
 h1 {
   font-size: 1.75rem;
@@ -620,13 +621,31 @@ li {
   line-height: 1.5rem;
 }
 
-#top {
-    line-height: 1.5rem;
+  #nav-bar {
+    padding: 2px;
   }
   
-  #nav-bar li {
-}
+  #nav-bar .nav-button {
+    padding: 2px;
+  }
   
+  main {
+  border: solid 1px var(--border);
+  padding: 2px;
+  }
+  
+  main section {
+  border: solid 1px var(--sub-border);
+  margin: 2px;
+  }
+  
+  main section .box {
+  padding: 0.5rem;
+  width: 95%;
+  margin: 0 auto;
+}
+/*resize image*/
+
   figure img{
     width: 75%;
   }
