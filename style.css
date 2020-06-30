@@ -63,7 +63,6 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  margin: 1.5rem;
 }
 
 p,
@@ -599,56 +598,71 @@ footer a:active {
 Responsiveness
 ===============*/
 @media screen and (max-width: 766px) {
-  
-/*size change for text, padding and margins*/
-  
-h1 {
-  font-size: 1.75rem;
-}
+  /*size change for text, padding and margins*/
 
-h2 {
-  font-size: 1.25rem;
-}
+  h1 {
+    font-size: 1.75rem;
+  }
 
-h3 {
-  font-size: 1rem;
-  margin: 1rem;
-}
+  h2 {
+    font-size: 1.25rem;
+  }
 
-p,
-li {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 
   #nav-bar {
     padding: 2px;
   }
-  
+
   #nav-bar .nav-button {
     padding: 2px;
   }
-  
-  main {
-  border: solid 1px var(--border);
-  padding: 2px;
-  }
-  
-  main section {
-  border: solid 1px var(--sub-border);
-  margin: 2px;
-  }
-  
-  main section .box {
-  padding: 0.5rem;
-  width: 95%;
-  margin: 0 auto;
-}
-/*resize image*/
 
-  figure img{
+  main {
+    border: solid 1px var(--border);
+    padding: 2px;
+    margin: 0;
+  }
+
+  main section {
+    border: solid 1px var(--sub-border);
+    padding: 2px;
+    margin: 0;
+  }
+
+  main section .box {
+    padding: 2px;
+    width: 100%;
+    margin: 0;
+  }
+
+  /*resize nav buttons*/
+  #nav-bar .nav-button {
+    flex: 1 1 25%;
+  }
+  /*resize image*/
+
+  figure img {
     width: 75%;
   }
+}
+
+/*responsive resize for really small screens*/
+@media screen and (max-width: 360px) {
+  /*resize nav buttons*/
+  #nav-bar .nav-button {
+    flex: 1 1 50%;
+  }
+}
+
 /*==========================
 Ye old timer printing view
 ===========================*/
