@@ -500,8 +500,8 @@ Background Clip
   margin: 0;
 }
 .background-clip-list li {
-  width: 100%;
-  margin: 1rem;
+  width: 80%;
+  margin: 0.5rem auto;
   padding: 1rem;
   border: 0.75rem dashed black;
   background-image: linear-gradient(
@@ -554,16 +554,13 @@ The little touches
   content: "" attr(alt) " was not found";
 }
 
-/*Credit where credit is due -https://commons.wikimedia.org/wiki/User:Ccalvert - cite the creator of the image on hover*/
-
-#box-img:hover {
-}
 
 /*=============
 Footer styling
 ===============*/
 footer p {
   color: var(--box-background-border);
+  text-align: center;
 }
 
 footer abbr {
@@ -598,52 +595,19 @@ footer a:active {
 Responsiveness
 ===============*/
 @media screen and (max-width: 766px) {
-  /*size change for text, padding and margins*/
-
-  h1 {
-    font-size: 1.75rem;
+  
+  .container {
+    width: 95vw;
+    margin 0 auto;
   }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  p,
-  li {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  #nav-bar {
-    padding: 2px;
-  }
-
-  #nav-bar .nav-button {
-    padding: 2px;
-  }
-
-  main {
-    border: solid 1px var(--border);
-    padding: 2px;
-    margin: 0;
-  }
-
-  main section {
-    border: solid 1px var(--sub-border);
-    padding: 2px;
-    margin: 0;
-  }
-
+  
   main section .box {
-    padding: 2px;
     width: 100%;
-    margin: 0;
   }
-
+  
+  main section .box p {
+    padding-left: 0.5rem;
+  }
   /*resize nav buttons*/
   #nav-bar .nav-button {
     flex: 1 1 25%;
@@ -653,13 +617,13 @@ Responsiveness
   figure img {
     width: 75%;
   }
-}
 
-/*responsive resize for really small screens*/
-@media screen and (max-width: 360px) {
-  /*resize nav buttons*/
-  #nav-bar .nav-button {
-    flex: 1 1 50%;
+  /*padding and margins*/
+  main,
+  main section,
+  main section .box {
+    margin: 0.25rem auto;
+    padding: 0.25rem;
   }
 }
 
@@ -667,4 +631,27 @@ Responsiveness
 Ye old timer printing view
 ===========================*/
 @media print {
+  /*remove nav bar*/
+  nav {
+    display: none;
+  }
+  
+  /*convert text size from px to pt*/
+h1 {
+  font-size: 16pt;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+h3 {
+  font-size: 12pt;
+}
+
+p,
+li {
+  font-size: 10pt;
+  line-height: 15pt;
+}
 }
