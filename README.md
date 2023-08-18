@@ -20,9 +20,9 @@ Web Browser
 
 ## Versioning
 
-Version #1.1 - Initial Content
-Version #1.2 - Styling the style
-Version #1.3 - CONTENT UPDATE - border-radius subsection - IN PROGRESS
+* Version #1.1 - Initial Content
+* Version #1.2 - Styling the style
+* Version #1.3 - CONTENT UPDATE - border-radius subsection
 
 ## Authors
 
