@@ -395,6 +395,12 @@ Border Radius
 #border-box-section .border-radius-list #border-radius-skew5 {
   border-radius: 10% 50% 30% 25%;
 }
+
+/*slash*/
+#border-box-section .border-radius-list #border-radius-slash {
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
 /*============
 Border Madness
 ==============*/
