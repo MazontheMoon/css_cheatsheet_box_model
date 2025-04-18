@@ -38,6 +38,9 @@ Web Browser
 * WikiCommons
 * Coolors
 
+## Acknowledgments
+We would like to offer our appreciation to Spotify and the *Last of Us* soundtrack for providing the suitable background noise for this project
+
 ## License
 
 This project is licensed under Unlicense - see the [LICENSE.md](LICENSE.md) file for details
