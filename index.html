@@ -414,6 +414,13 @@
           <li><span class="list-head">visible</span>The overflowing content is shown outside the box <span class="highlighter">(default)</span></li>
         </ul>
         <p>You can also specify overflow-x and overflow-y</p>
+        <p>But...what happens when a box wraps many lines (aka CSS Fragmentation)?</p>
+        <ul class="description-list">
+          <li><span class="list-head">box-decoration-break: slice; //default</span>
+          <span id="box-decoration-break-slice" class="box-decoration-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellat laboriosam vel aut porro voluptatem, eos quasi reprehenderit esse molestiae.</span>
+        </li>
+          <li><span class="list-head">box-decoration-break: clone;</span><span id="box-decoration-break-clone" class="box-decoration-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellat laboriosam vel aut porro voluptatem, eos quasi reprehenderit esse molestiae.</span></li>
+        </ul>
       </div>
     </section>
     <!--section 9 - the outline box-->
